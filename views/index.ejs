@@ -1,0 +1,28 @@
+<%- include('partials/header.ejs') %>
+      <% if(message !="" ) { %>
+        <div id="mensagem">
+          <p>
+            <%= message %>
+          </p>
+          <span id="close">&times;</span>
+        </div>
+        <% } %>
+
+        <% filmes.forEach((filme)=> { %>
+        
+          <div class="cards">
+            <a href="/detalhes/<%= filme.id %>">
+            <img src="<%= filme.Imagem %>" alt="Imagem do Filme">
+            <h2>
+              <%= filme.Nome %>
+            </h2>
+            <p class="genero">
+              <span>
+                <%= filme.Genero %>
+              </span>
+              </p>
+            </a>
+          </div>
+          
+          <% })%>
+<%- include('partials/footer.ejs') %>

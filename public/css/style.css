@@ -1,0 +1,361 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: Roboto,Arial;
+}
+
+html{
+    background: linear-gradient(0deg, rgba(255,255,255,1) 50%, rgb(187, 193, 183) 50%);
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+}
+
+body{
+    
+    width: 1000%;
+    height: 100%;
+    
+  }
+
+  div#titulo{
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 1rem 0 2rem 0;
+  }
+
+  div#titulo h1 {
+    color: #0d5dbe;
+    -webkit-text-stroke-width: 2px; /* largura da borda */
+    -webkit-text-stroke-color: #181818; /* cor da borda */
+    font-size: 4rem;
+    letter-spacing: .4rem;
+    margin-left: 2rem;
+  }
+
+  div#titulo img{
+    width: 80px;
+    margin: 0 2.5rem 0 7rem;
+  }
+
+  section#main-section{
+    background-color: rgb(207, 191, 191);
+    box-shadow: .1rem .1rem 1rem .2rem;
+    margin: 0 1rem 0 1rem;
+    display: flex;
+    flex-direction: column;
+  }
+
+  section#main-section nav{
+    width: 100%;
+    align-self: center;
+    justify-self: center;
+    border-bottom: 1px solid #00000020;
+    background-color: #2bd9e6;
+  }
+
+  section#main-section nav ul{
+    display: flex;
+    justify-content: center;
+  }
+
+  section#main-section nav ul li{
+    list-style-type: none;
+    width: 5rem;
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    border: 1px solid #00000015;
+  }
+
+  section#main-section nav ul li:hover{
+    background-color: #ff0101;
+  }
+
+  section#main-section nav ul li a{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    margin: 1rem;
+  }
+
+  section#content{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin-top: 1rem;
+    padding-bottom: 1.3rem;
+  
+  }
+
+  section#content div.cards{
+    width: 15rem;
+    box-shadow: 5px 5px 5px 5px #00000015;
+    padding: 1rem;
+    margin-top: 2rem;
+     text-align: center; 
+    cursor: pointer;
+    transition: transform .2s ease-in-out;
+    
+  }
+
+  section#content div.cards:hover{
+    transform: scale(1.04);
+  }
+
+  section#content div.cards a{
+    text-decoration: none;
+    color: black;
+  }
+
+  section#content div.cards a p#numero{
+    margin-bottom: 1rem;
+    font-size: .8rem;
+    color: rgb(129, 127, 127);
+  }
+
+  section#content div.cards a img{
+    width: 100%;
+    background-color: #f2f2f285;
+    margin-bottom: .2rem;
+    height: 600px;
+  }
+
+  section#content div.cards a h2{
+    margin-bottom: .5rem;
+  }
+  section#content div.cards a p.tipo span{
+    border: 1px solid #54b564;
+    padding: .3rem;
+    font-size: .8rem;
+  }
+  
+  section#cadastro{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 1rem;
+    flex-wrap: wrap;
+  }
+  
+  section#cadastro h2{
+    width: 100%;
+    text-align: center;
+    padding-bottom: 2rem;
+    font-size: 2rem;
+    font-weight: 400;
+  }
+  
+  section#cadastro form{
+    width: 70%;
+    align-self: center;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  section#cadastro form input{
+    width: 100%;
+    padding: .7rem;
+    font-size: 1rem;
+    outline: none;
+    border: 2px solid rgb(189, 189, 189);
+    margin-bottom: 1rem;
+  }
+  
+  section#cadastro form label{
+    color:rgb(63, 63, 63);
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+  
+  section#cadastro form button{
+    padding: .6rem;
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    font-size: 1rem;
+    background-color: white;
+    border: solid 1px red;
+    color: red;
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+  }
+  
+  section#cadastro form button:hover{
+    background-color: red;
+    color: white;
+  }
+  
+  section#detalhes{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  
+  section#detalhes h2{
+    font-size: 2rem;
+    margin-bottom: .3rem;
+  }
+  
+  section#detalhes p#genero{
+    margin-bottom: 3rem;
+    border: 1px solid #063cee;
+    padding: .3rem;
+    font-size: 1rem;
+    
+  }
+  
+  section#detalhes div#desc-content{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items:center;
+  }
+  
+  section#detalhes div#desc-content div#desc-img{
+    margin-bottom: 1rem;
+  }
+  
+  section#detalhes div#desc-content div#desc-img img{
+    background-color: #f2f2f285;
+    width:100%;
+    border-radius: 1rem;
+    margin-right: 2rem;
+  }
+  
+  section#detalhes div#desc-content div#desc-box{
+    width: 20rem;
+    text-align: center;
+    margin: 1.5rem;
+  }
+  
+  section#detalhes div#desc-content div#desc-box p{
+    font-weight: 400;
+    font-size: 1.3rem;  
+  }
+  
+  section#detalhes div#desc-content div#sinopse{
+    text-align: center;
+    font-size: 1.5rem;
+    padding: 1rem;
+  }
+  
+  footer{
+    padding: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 1rem;
+  }
+  
+  footer p{
+    width: 100%;
+    color: #000000;
+    text-align: center;
+    font-size: 1.2rem;
+  }
+  
+  footer p a{
+    text-decoration: none;
+    color: #000000;
+    font-weight: 600;
+  }
+  
+  div#mensagem{
+    padding: 1rem;
+    background-color: rgb(197, 255, 214);
+    color: #004d04;
+    position: fixed;
+    top: 2rem;
+    right: 1rem;
+    z-index: 100;
+    text-align: center;
+    font-size: 1.1rem;
+    font-weight: 600;
+    width: 15%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 1px 1px 5px black;
+  }
+  
+  span#close {
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: .3s;
+    margin-left: .5rem;
+  }
+  
+  span#close:hover{
+    color: rgb(255, 0, 0);
+    transform: scale(1.5);
+  }
+  
+  @media only screen and (max-width: 600px){
+    nav ul{
+      width: 70%;
+      display: flex;
+      justify-content: center;
+    }
+
+    body{
+      width: 100%;
+    }
+
+    div#titulo img{
+      width: 60px;
+      margin: 0 1rem 0 1rem;
+    }
+  
+    div#titulo h1{
+      font-size: 2rem;
+    }
+  
+    section#detalhes div#desc-content div#desc-box {
+      width: 100%;
+      text-align: center;
+    }
+  
+    section#cadastro form button{
+      width: 6rem;
+    }
+  
+    div#mensagem{
+      left: 1rem;
+      width: auto;
+    }
+  
+  }
+  @media only screen and (max-width: 600px){
+    div#titulo img{
+      width: 60px;
+      margin: 0 1rem 0 1rem;
+    }
+  
+    div#titulo h1{
+      font-size: 2rem;
+    }
+  
+    section#detalhes div#desc-content div#desc-box {
+      width: 100%;
+      text-align: center;
+    }
+  
+    section#cadastro form button{
+      width: 6rem;
+    }
+  
+    div#mensagem{
+      left: 1rem;
+      width: auto;
+    }
+  
+  } 

@@ -1,0 +1,49 @@
+<%- include('partials/header.ejs') %>
+
+  <section id="detalhes">
+
+    <h2>
+      <%= filme.Nome %>
+    </h2>
+
+    <p id="genero">
+      <%= filme.Genero %>
+    </p>
+
+    <div id="desc-content">
+
+      <div id="desc-img">
+
+        <img src="<%= filme.Imagem %>" alt="Imagem do Filme">
+
+      </div>
+
+    <div id="desc-box">
+
+        <p>
+          <%= filme.Diretor %>
+        </p>
+
+    </div>
+
+    <div id="ano">
+
+          <p>
+            <%= filme.AnoDeLançamento %>
+          </p>
+
+    </div>
+
+    <div id="sinopse">
+
+            <p>
+                <%= filme.Sinopse %>
+            </p>
+
+    </div>
+        
+    </div>
+
+  </section>
+
+<%- include('partials/footer.ejs') %>
