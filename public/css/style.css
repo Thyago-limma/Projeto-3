@@ -217,6 +217,19 @@ body{
     flex-wrap: wrap;
     align-items:center;
   }
+
+  section#detalhes div#desc-content button{
+    width: 6rem;
+    border-radius: 5rem;
+    background:rgb(23, 107, 225);
+    margin: 0 1.5rem 0 2rem;
+  }  
+
+  section#detalhes div#desc-content button a{
+    text-decoration: none;
+    color:white;
+    font-size: 1.5rem;
+  }
   
   section#detalhes div#desc-content div#desc-img{
     margin-bottom: 1rem;

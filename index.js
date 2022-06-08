@@ -4,6 +4,7 @@ const path = require('path'); //Adiciona Arquivos Estáticos
 
 const port = 3000; //Rodando na Porta do Servidor
 let message = ''; //Mensagem de Cadastro com Sucesso do Usuário
+let filme = undefined;
 
 
 const filmes = [
@@ -78,7 +79,7 @@ app.get('/', (req, res) => {
 		message = '';
 	}, 5000);
 
-    res.render('index', { filmes, message });
+    res.render('index', { filmes, message,filme });
 }); //Arquivo a ser renderizado dentro da views
 
 app.get('/cadastro', (req, res) => {
@@ -86,25 +87,26 @@ app.get('/cadastro', (req, res) => {
 });
 
 app.post('/new', (req, res) => {
-	const filme = req.body;
+	filme = req.body;
 	filme.id = filmes.length + 1;
 	filmes.push(filme);
 	message = `Filme ${filme.nome} cadastrado com sucesso!`;
 	res.redirect('/');
 });
 
-app.get('/edit' , (req,res) => {
+app.get("/edit/:id" , (req,res) => {
     let id = +req.params.id;
-    const filme = filmes.find((filme) => filme.id === id);  
+     filme = filmes.find((filme) => filme.id === id);  
     res.render("edit", {filme});
 });
 
 app.post("/edit/:id", (req,res) =>{
-   
-    let id = +req.params.id - 1;    
-    let newFilme = req.body;
-    newFilme.id = id + 1;
-    filmes[id] = newFilme;
+    const id = +req.params.id ;    
+    const newFilme = req.body;
+    newFilme.id = id;
+    filme = newFilme;
+    filmes[filme.id -1] = newFilme;
+    filme = undefined;
     res.redirect("/");
 
 });

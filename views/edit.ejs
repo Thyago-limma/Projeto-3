@@ -4,13 +4,13 @@
 
     <div class="box">
 
-        <form action="/edit/ <%= filmes.id %>" method="POST">
+        <form action="/edit/<%= filme.id %>" method="POST">
 
             <div class="inputC">
 
                 <p class="question">Nome</p>
                 <label for="nome"></label class="labelinput">
-                <input type="text" name="nome" id="input_nome" required value = "<%= filme.Nome %>">
+                <input type="text" name="Nome" id="input_nome" required value = "<%= filme.Nome %>">
 
             </div>
 
@@ -19,7 +19,7 @@
             <div class="inputC">
                 <p class="question">Genero</p>
 
-                <select id="gen" name="genero">
+                <select id="gen" name="Genero">
                     <%
                     var options = [ "Animação", "Comédia", "Comédia Romântica", "Comédia Dramática", "Documentário", "Drama","Faroeste", "Ficção Científica", "Musical", "Suspense", "Terror / Horror"];
                         for ( var i = 0; i < options.length; i++ ){
@@ -37,8 +37,8 @@
                 <div class="inputC">
 
                     <p class="question">Imagem Url</p>
-                    <label for="image"></label class="labelinput">
-                    <input type="url" name="image" id="input_image" required value="<%=filme.Imagem%>">
+                    <label for="Imagem"></label class="labelinput">
+                    <input type="url" name="Imagem" id="input_image" required value="<%=filme.Imagem%>">
 
                 </div>
 
@@ -57,7 +57,7 @@
 
                     <p class="question">Nome do diretor</p>
                     <label for="diretor"></label class="labelinput">
-                    <input type="text" name="diretor" id="input_diretor" required value = "<%=filme.Diretor%>">
+                    <input type="text" name="Diretor" id="input_diretor" required value = "<%=filme.Diretor%>">
 
                 </div> 
 
@@ -67,7 +67,7 @@
 
                     <p class="question">Ano de lancamento</p>
                     <label for="diretor"></label>
-                    <input type="integer" name="ano" id="input_ano" required value = "<%=filme.AnoDeLançamento%>">
+                    <input type="integer" name="AnoDeLançamento" id="input_ano" required value = "<%=filme.AnoDeLançamento%>">
 
                 </div>
 
@@ -77,7 +77,7 @@
 
                     <p class="question">Sinopse</p>
                     <label for="diretor"></label>
-                    <input type="text" name="sinopse" id="input_sinopse" required value = "<%=filme.Sinopse%>">
+                    <input type="text" name="Sinopse" id="input_sinopse" required value = "<%=filme.Sinopse%>">
 
                 </div>
 
