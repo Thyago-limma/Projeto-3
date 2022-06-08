@@ -1,8 +1,9 @@
+require("dotenv").config();
 const express = require('express'); //Importando o Módulo Express
 const app = express(); //Criando uma Váriavel App e Chamando Todas as Funções do Express Nela
 const path = require('path'); //Adiciona Arquivos Estáticos
 
-const port = 3000; //Rodando na Porta do Servidor
+const port = process.env.PORT || 3000; //Rodando na Porta do Servidor
 let message = ''; //Mensagem de Cadastro com Sucesso do Usuário
 let filme = undefined;
 

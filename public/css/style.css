@@ -7,6 +7,7 @@
 }
 
 html{
+  width: 100%;;
     background: linear-gradient(0deg, rgba(255,255,255,1) 50%, rgb(187, 193, 183) 50%);
     background-repeat: no-repeat;
     display: flex;
@@ -313,14 +314,14 @@ body{
   }
   
   @media only screen and (max-width: 600px){
+    body{
+      width: 100%;
+    }
+
     nav ul{
       width: 70%;
       display: flex;
       justify-content: center;
-    }
-
-    body{
-      width: 100%;
     }
 
     div#titulo img{
@@ -347,7 +348,17 @@ body{
     }
   
   }
-  @media only screen and (max-width: 600px){
+  @media only screen and (max-width: 900px){
+    body{
+      width: 80%;
+    }
+
+    nav{
+      display: flex;
+      justify-content: center;
+      align-items:center;
+    }
+
     div#titulo img{
       width: 60px;
       margin: 0 1rem 0 1rem;
@@ -369,6 +380,12 @@ body{
     div#mensagem{
       left: 1rem;
       width: auto;
+    }
+
+    footer{
+      text-align: center;
+      margin: 0 2.5rem 0 0;
+      font-size: 9px;
     }
   
   } 
