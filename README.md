@@ -44,5 +44,28 @@ A avaliação será feita por entregáveis obrigatórios, cada um valerá uma qu
 
 Para Conseguir Abrir o Projeto no Servidor Local é Necessário Instalar as Depedencias:
 
-> 
+> [!npm i nodemon --save-dev]
+
+> [!npm i express --save]
+
+> [!npm i --save ejs]
+
+O Projeto Foi Criado em Node, Express.
+
+### Obs: 
+
+O Projeto foi Uma Reciclagem do Projeto da Pokedex, Pois Estava Criando um do Zero. mas Estava Dando Alguns Erros ao Renderizar a Página
+Então Como Estava Sem Tempo. Aproveitei um Projeto Antigo.
+
+### Obs2:
+
+Para Editar um Filme Que Já Existe ou um Filme que Foi Cadastrado. é Necessário Clicar no Filme Para Ser Redirecionado a Tela DEtalhes,
+e Ai Sim Clicar em Editar, Para Poder Editar as Informações do Filme
+
+### Obs 3: 
+
+O Projeto Não Está 100% Concluido, Está Faltando a Rota de Editar. Pois Opcionei Fazer
+Essa Rota e Suas Propriedades Quando já Estiver Rodando com o Banco de Dados.
+
+
  
